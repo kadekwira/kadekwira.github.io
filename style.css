@@ -185,20 +185,12 @@ body {
     padding:5px 20px;
     box-shadow: 2px 8px 0px #218fe4;
   }
+  .logo > img{
+    width:50px;
+    height:50px;
+  }
   .sosial-media{
     gap:10px;
-  }
-  .instagram> a img{
-    width: 20px;
-    height: 20px;
-  }
-  .github >a img{
-    width: 20px;
-    height: 20px;
-  }
-  .email >a img{
-    width: 20px;
-    height: 20px;
   }
   /* Akhir Nav*/
 
