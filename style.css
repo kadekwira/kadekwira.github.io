@@ -1,0 +1,256 @@
+@font-face /*perintah untuk memanggil font eksternal*/
+{
+    font-family: 'Grade'; /*memberikan nama bebas untuk font*/
+    src: url('/assets/font/FontsFree-Net-Garde.ttf');/*memanggil file font eksternalnya di folder nexa*/
+
+    font-family: 'Nixmat';
+    src: url('/assets/font/FontsFree-Net-Nixmat.ttf');
+
+    font-family: 'Robodron';
+    src: url('/assets/font/Robodron\ Bold.otf');
+
+    font-family: 'Freeline';
+    src: url('/assets/font/FreeLine.ttf');
+}
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #f3f1f1;
+  }
+  
+  /*Nav*/
+  nav{
+    display: flex;
+    justify-content: space-between;
+    height:80px;
+    padding:5px 40px;
+    background: white;
+    box-shadow: 5px 10px 0px #218fe4;
+    border-radius: 12px;
+  }
+  .logo{
+    display: flex;
+  }
+  .sosial-media{
+    display: flex;
+    align-self: center;
+    gap:20px;
+    cursor: pointer;
+  }
+  .instagram> a img{
+    width: 30px;
+    height: 30px;
+  }
+  /* Akhir Nav*/
+  
+  /* Header*/
+  header{
+    display:flex;
+    flex-direction: column;
+    background: linear-gradient(#0571ff 60%, #218fe4); 
+    color:white;
+    margin:30px;
+    border-radius: 12px;
+  }
+  .avatar{
+    display:flex;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    align-self: center;
+    padding: 15px;
+  }
+  .profile{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  .profile>h3{
+    margin-top:0px;
+  }
+  .profile>h1{
+    margin-top:0px;
+  }
+  
+  header>.informasi{
+    display: flex;
+    justify-content: space-evenly;
+    gap:25px;
+    margin:10px 15px 15px 15px;
+  }
+  .data-pribadi > a:link{
+    text-decoration: none;
+    color:white;
+  }
+  .alasan > a:link{
+    text-decoration: none;
+    color:white;
+  }
+  .pendidikan > a:link{
+    text-decoration: none;
+    color:white;
+  }
+  .pekerjaan > a:link{
+    text-decoration: none;
+    color:white;
+  }
+  .data-pribadi>a:hover{
+      color:#0571ff;
+          background-color: white;
+      padding:5px;
+      border-radius: 10px;
+    font-weight:bold;
+  }
+  .alasan>a:hover{
+      color:#0571ff;
+          background-color: white;
+      padding:5px;
+      border-radius: 10px;
+      font-weight:bold;
+  }
+  .pendidikan>a:hover{
+      color:#0571ff;
+          background-color: white;
+      padding:5px;
+      border-radius: 10px;
+    font-weight:bold;
+  }
+  .pekerjaan>a:hover{
+      color:#0571ff;
+          background-color: white;
+      padding:5px;
+      border-radius: 10px;
+    font-weight:bold;
+  }
+      a:visited
+      {
+          color:white;
+      }
+  
+  /* Akhir Header*/
+  
+  /*Main*/
+  main{
+    display:flex;
+    margin:30px;
+    flex-direction: column;
+    padding:20px;
+    background: white;
+    border-radius: 12px;
+  }
+  .data1,.data2,.data3,.data4,.data5{
+    display:flex;
+  }
+  .fullname,.alamat,.no-hp,.tempat-lahir,.mail,.jenis-kelamin,.agama,.tanggal-lahir,.hobi{
+   flex:1;
+  }
+  .p1{
+    color:grey;
+  }
+
+  .sd,.tahun-masuk,.smp,.sma{
+    flex:1;
+  }
+  
+  .status,.kuliah{
+    flex:1;
+  }
+  /* Akhir Main*/
+  
+  
+  /*Footer*/
+  #footer{
+    display:flex;
+    justify-content:center;
+    background-color:white;
+    padding:1.5em;
+    background: white;
+    box-shadow: 5px 10px 0px #218fe4;
+    border-radius: 12px;
+    font-size: 20px;
+  }
+
+  #footer span{
+    width: 40px;
+    height: 40px;
+  }
+  /*Akhir Footer*/
+
+
+  @media only screen and (max-width: 600px) {
+  
+    /*Nav*/
+  nav{
+    height:50px;
+    padding:5px 20px;
+    box-shadow: 2px 8px 0px #218fe4;
+  }
+  .sosial-media{
+    gap:10px;
+  }
+  .instagram> a img{
+    width: 20px;
+    height: 20px;
+  }
+  .github >a img{
+    width: 20px;
+    height: 20px;
+  }
+  .email >a img{
+    width: 20px;
+    height: 20px;
+  }
+  /* Akhir Nav*/
+
+    /* Header*/
+    header{
+      margin:20px 0;
+      padding:10px;
+    }
+    .avatar{
+      width: 80px;
+      height: 80px;
+    }
+    .profile{
+      margin-bottom: 5px;
+    }
+    .profile>h3{
+      font-size:1em;
+    }
+    .profile>h1{
+      font-size: 1.2em;
+    }
+    
+    header>.informasi{
+      display: flex;
+      justify-content: space-evenly;
+      gap:25px;
+      margin:5px 10px 3px 10px;
+      font-size: 0.8em;
+    }
+    /* Akhir Header*/
+
+      /*Main*/
+  main{
+    margin:20px 0;
+  }
+  main > h2{
+    font-size: 1.2 rem;
+  }
+  .data1,.data2,.data3,.data4,.data5{
+    flex-direction: column;
+    font-size: 0.8 rem;
+  }
+  /* Akhir Main*/
+
+  /*Footer*/
+  #footer{
+    padding:0.8rem;
+    font-size: 1rem;
+    margin-bottom: 2rem;
+  }
+  /*Akhir Footer*/
+
+
+
+  }
